@@ -39,35 +39,33 @@
 			<div class="inner">
 				<h1 class="major">Original</h1>
 				<p>Below are the original MIDI versions of some songs used for style transfer.</p>
-				<div class="col-6 col-12">
-					<div class="row">
+				<div class="row">
+					<div class="col-3 col-4">
 						<h3>Pop</h3>
-						<ul>
+						<ul class="alt">
 							<li>
 								<figcaption>Backstreet Boys - Everybody</figcaption>
-								<audio controls src="../audio/original/bboys_everybody.mid">
+								<audio controls src="../audio/original/bboys_everybody.mp3">
 									Your browser does not support the
 									<code>audio</code> element.></audio>
 							</li>
 							<li>
 								<figcaption>Michael Jackson - Billie Jean</figcaption>
-								<audio controls src="../audio/original/billiejn.mid">
+								<audio controls src="../audio/original/billiejn.mp3">
 									Your browser does not support the
 									<code>audio</code> element.></audio>
 							</li>
 							<li>
 								<figcaption>Real McCoy - Automatic Lover</figcaption>
-								<audio controls src="../audio/original/real_mccoy-automaticlover.mid">
+								<audio controls src="../audio/original/real-mccoy-automaticlover.mp3">
 									Your browser does not support the
 									<code>audio</code> element.></audio>
 							</li>
 						</ul>
 					</div>
-				</div>
-				<div class="col-6 col-12">
-					<div class="row">
+					<div class="col-3 col-4">
 						<h3>Jazz</h3>
-						<ul>
+						<ul class="alt">
 							<li>
 								<figcaption>Wes Montgomery - 4 on 6</figcaption>
 								<audio controls src="../audio/original/4on6.mp3">
@@ -76,13 +74,13 @@
 							</li>
 							<li>
 								<figcaption>Sammy Nestico - Hay Burner</figcaption>
-								<audio controls src="../audio/original/hayBurner.mid">
+								<audio controls src="../audio/original/hayBurner.mp3">
 									Your browser does not support the
 									<code>audio</code> element.></audio>
 							</li>
 							<li>
 								<figcaption>Pink Panther Theme</figcaption>
-								<audio controls src="../audio/original/ppanther_37.mid">
+								<audio controls src="../audio/original/ppanther-37.mp3">
 									Your browser does not support the
 									<code>audio</code> element.></audio>
 							</li>
@@ -91,71 +89,370 @@
 				</div>
 
 
+
 				<h1 class="major">ChordGAN</h1>
-				<p>Here you will find style transfer results generated with CycleGAN</p>
+				<p>Here you will find style transfer results generated with ChordGAN, using various sampling rate and
+					number of bars.</p>
+
 				<!-- Text -->
+
+				<ul class="actions">
+					<li><a id="chgan-genre-jazz" class="button primary large">Jazz</a></li>
+					<li><a id="chgan-genre-pop" class="button large">Pop</a></li>
+				</ul>
+				<div class="row">
+					<h3 class="col-6">Sampling rate</h3>
+					<h3 class="col-6">Number of bars</h3>
+				</div>
+				<div class="row">
+					<ul class="actions col-6">
+						<li><a id="sr8" class="button primary">8</a></li>
+						<li><a id="sr16" class="button ">16</a></li>
+						<li><a id="sr32" class="button ">32</a></li>
+					</ul>
+
+					<ul class="actions col-6">
+						<li><a id="bars1" class="button primary">1</a></li>
+						<li><a id="bars4" class="button ">4</a></li>
+					</ul>
+				</div>
+				<div id="chgan-jazz">
+					<section>
+						<h2>Jazz</h2>
+						</p>
+						<div class="row">
+							<div id="fs8 b1" class="col-3 col-4">
+								<h3>Sampling rate: 8 - # of bars: 1</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Backstreet Boys - Everybody</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs8_1bars/everybody-40-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Michael Jackson - Billie Jean</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs8_1bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Real McCoy - Automatic Lover</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs8_1bars/d-automaticlover-26-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs16 b1" class="col-3 col-4">
+								<h3>Sampling rate: 16 - # of bars: 1</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Backstreet Boys - Everybody</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs16_1bars/everybody-40-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Michael Jackson - Billie Jean</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs16_1bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Real McCoy - Automatic Lover</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs16_1bars/d-automaticlover-26-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs32 b1" class="col-3 col-4">
+								<h3>Sampling rate: 32 - # of bars: 1</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Backstreet Boys - Everybody</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs32_4bars/everybody-40-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Michael Jackson - Billie Jean</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs32_4bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Real McCoy - Automatic Lover</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs32_4bars/d-automaticlover-26-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div id="fs8 b4" class="col-3 col-4">
+								<h3>Sampling rate: 8 - # of bars: 4</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Backstreet Boys - Everybody</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs8_4bars/everybody-40-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Michael Jackson - Billie Jean</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs8_4bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Real McCoy - Automatic Lover</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs8_4bars/d-automaticlover-26-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs16 b4" class="col-3 col-4">
+								<h3>Sampling rate: 16 - # of bars: 4</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Backstreet Boys - Everybody</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs16_4bars/everybody-40-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Michael Jackson - Billie Jean</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs16_4bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Real McCoy - Automatic Lover</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs16_4bars/d-automaticlover-26-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs32 b4" class="col-3 col-4">
+								<h3>Sampling rate: 32 - # of bars: 4</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Backstreet Boys - Everybody</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs32_4bars/everybody-40-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Michael Jackson - Billie Jean</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs32_4bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Real McCoy - Automatic Lover</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/jazz/fs32_4bars/d-automaticlover-26-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</section>
+				</div>
+				<div id="chgan-pop">
+					<section>
+						<h2>Pop</h2>
+						<p>Songs converted to Pop.
+						</p>
+						<div class="row">
+							<div id="fs8 b1" class="col-3 col-4 b1">
+								<h3>Sampling rate: 8 - # of bars: 1</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Wes Montgomery - 4 on 6</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs8_1bars/4on6-0-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Sammy Nestico - Hay Burner</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs8_1bars/hayBurner-88-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Pink Panther Theme</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs8_1bars/ppanther-37-137-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs16 b1" class="col-3 col-4 b1">
+								<h3>Sampling rate: 16 - # of bars: 1</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Wes Montgomery - 4 on 6</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs16_1bars/4on6-0-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Sammy Nestico - Hay Burner</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs16_1bars/billiejn-10-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Pink Panther Theme</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs16_1bars/ppanther-37-137-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs32 b1" class="col-3 col-4 b1">
+								<h3>Sampling rate: 32 - # of bars: 1</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Wes Montgomery - 4 on 6</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs32_4bars/4on6-0-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Sammy Nestico - Hay Burner</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs32_4bars/hayBurner-88-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Pink Panther Theme</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs32_4bars/ppanther-37-137-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div id="fs8 b4" class="col-3 col-4 b4">
+								<h3>Sampling rate: 8 - # of bars: 4</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Wes Montgomery - 4 on 6</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs8_4bars/4on6-0-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Sammy Nestico - Hay Burner</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs8_4bars/hayBurner-88-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Pink Panther Theme</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs8_4bars/ppanther-37-137-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs16 b4" class="col-3 col-4 b4">
+								<h3>Sampling rate: 16 - # of bars: 4</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Wes Montgomery - 4 on 6</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs16_4bars/4on6-0-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Sammy Nestico - Hay Burner</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs16_4bars/hayBurner-88-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Pink Panther Theme</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs16_4barsppanther-37-137-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+							<div id="fs32 b4" class="col-3 col-4">
+								<h3>Sampling rate: 32 - # of bars: 4</h3>
+								<ul class="alt">
+									<li>
+										<figcaption>Wes Montgomery - 4 on 6</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs32_4bars/4on6-0-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Sammy Nestico - Hay Burner</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs32_4bars/hayBurner-88-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+									<li>
+										<figcaption>Pink Panther Theme</figcaption>
+										<audio controls
+											src="../audio/chordgan_transfer/pop/fs32_4bars/ppanther-37-137-transfer.mp3">
+											Your browser does not support the
+											<code>audio</code> element.></audio>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+					</section>
+				</div>
+				<!-- 
 				<section>
-					<h2>Jazz</h2>
-					<p>Songs converted to the Jazz genre
-					</p>
-					<hr />
-					<audio></audio>
-					<!-- <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer
-						non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
-						accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p> -->
-					<hr />
-					<h2>Heading Level 2</h2>
-					<h3>Heading Level 3</h3>
-					<h4>Heading Level 4</h4>
-					<hr />
-					<h3>Blockquote</h3>
-					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
-						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
-						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
-						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-					<h3>Preformatted</h3>
-
-				</section>
-
-				<!-- <section>
-					<h2>Lists</h2>
-					<div class="row">
-						<div class="col-6 col-12-medium">
-							<h3>Unordered</h3>
-							<ul>
-								<li>Dolor pulvinar etiam.</li>
-								<li>Sagittis adipiscing.</li>
-								<li>Felis enim feugiat.</li>
-							</ul>
-							<h3>Alternate</h3>
-							<ul class="alt">
-								<li>Dolor pulvinar etiam.</li>
-								<li>Sagittis adipiscing.</li>
-								<li>Felis enim feugiat.</li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<h3>Ordered</h3>
-							<ol>
-								<li>Dolor pulvinar etiam.</li>
-								<li>Etiam vel felis viverra.</li>
-								<li>Felis enim feugiat.</li>
-								<li>Dolor pulvinar etiam.</li>
-								<li>Etiam vel felis lorem.</li>
-								<li>Felis enim et feugiat.</li>
-							</ol>
-							<h3>Icons</h3>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
-								</li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span
-											class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span
-											class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							</ul>
-						</div>
-					</div>
 					<h2>Actions</h2>
 					<div class="row">
 						<div class="col-6 col-12-medium">
@@ -188,7 +485,6 @@
 						</div>
 					</div>
 				</section>
-
 				<section>
 					<h2>Table</h2>
 					<h3>Default</h3>
@@ -427,8 +723,9 @@
 						praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus
 						vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
 						Integer ac pellentesque praesent.</p>
-				</section>  -->
+				</section>
 
+ -->
 			</div>
 		</section>
 
@@ -452,6 +749,7 @@
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/buttons.js"></script>
 
 
 </body>
