@@ -57,5 +57,31 @@
 	});
 
 	// ---- CycleGAN ----
+	$("#jazz-pop").click(function () {
+		$(".cygan.model").removeClass("primary");
+		$("#jazz-pop").addClass("primary");
+		$(".transfer.button").hide();
+		$("#cygan-buttons").show("slow");
+		$("#cygan-jazz2pop").show("medium");
+		$("#cygan-pop2jazz").show("medium");
+	});
+
+	$("#classic-jazz").click(function () {
+		$(".cygan.model").removeClass("primary");
+		$("#classic-jazz").addClass("primary");
+		$(".transfer.button").hide();
+		$("#cygan-buttons").show("slow");
+		$("#cygan-classic2jazz").show("medium");
+		$("#cygan-jazz2classic").show("medium");
+	});
+
+	$("#pop-classic").click(function () {
+		$(".cygan.model").removeClass("primary");
+		$("#pop-classic").addClass("primary");
+		$(".transfer.button").hide();
+		$("#cygan-buttons").show("slow");
+		$("#cygan-pop2classic").show("medium");
+		$("#cygan-classic2pop").show("medium");
+	});
 
 })(jQuery);

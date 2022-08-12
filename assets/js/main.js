@@ -9,8 +9,13 @@
 	$("#chgan-pop").hide();
 	$("#chgan-jazz").hide();
 	$("#cygan-pop").hide();
-	// $("#cygan-jazz").hide();
-	$("#cygan-classical").hide();
+	$("#cygan-buttons").hide();
+	$("#jazz2pop").hide();
+	$("#pop2jazz").hide();
+	$("#classic2jazz").hide();
+	$("#jazz2classic").hide();
+	$("#pop2classic").hide();
+	$("#classic2pop").hide();
 
 	var $window = $(window),
 		$body = $('body'),

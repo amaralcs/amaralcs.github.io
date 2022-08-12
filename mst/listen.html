@@ -455,33 +455,25 @@
 				<h1 class="major">CycleGAN</h1>
 				<p>Blurb.</p>
 
-				<!-- Text -->
-
-				<!-- <ul class="actions">
-					<li><a id="jazz2pop" class="button large">Jazz to Pop</a></li>
-					<li><a id="pop2jazz" class="button large">Pop to Jazz</a></li>
-					<li><a id="classic2jazz" class="button large">Classic to Jazz</a></li>
-					<li><a id="jazz2classic" class="button large">Jazz to Classic</a></li>
-				</ul>
+				<!-- CycleGAN -->
 				<ul class="actions">
-					<li><a id="classic2pop" class="button large">Classic to Pop</a></li>
-					<li><a id="pop2classic" class="button large">Pop to Classic</a></li>
-				</ul> -->
-
-				<ul class="actions">
-					<li><a id="btn jazz pop" class="button large">Jazz / Pop</a></li>
-					<li><a id="btn classic jazz" class="button large">Classic / Jazz</a></li>
-					<li><a id="btn classic pop" class="button large">Classic / Pop</a></li>
+					<li><a id="jazz-pop" class="cygan model button large">Jazz / Pop</a></li>
+					<li><a id="classic-jazz" class="cygan model button large">Classic / Jazz</a></li>
+					<li><a id="pop-classic" class="cygan model button large">Classic / Pop</a></li>
 				</ul>
 
-				<h3 class="col-6">Number of bars</h3>
-				<ul class="actions col-6">
-					<li><a id="cygan-bars1" class="button">1</a></li>
-					<li><a id="cygan-bars4" class="button ">4</a></li>
-					<li><a id="cygan-bars8" class="button ">8</a></li>
-				</ul>
-
-				<div id="jazz pop wrapper">
+				<div id="cygan-buttons">
+					<h3 class="col-6">Transfer direction</h3>
+					<ul class="actions col-6">
+						<li><a id="cygan-jazz2pop" class="transfer button">Jazz 2 Pop</a></li>
+						<li><a id="cygan-pop2jazz" class="transfer button">Pop 2 Jazz</a></li>
+						<li><a id="cygan-classic2jazz" class="transfer button">Classic 2 Jazz</a></li>
+						<li><a id="cygan-jazz2classic" class="transfer button">Jazz 2 Classic</a></li>
+						<li><a id="cygan-pop2classic" class="transfer button">Pop 2 Classic</a></li>
+						<li><a id="cygan-classic2pop" class="transfer button">Classic 2 Pop</a></li>
+					</ul>
+				</div>
+				<div id="jazz-pop-wrapper">
 					<div id="jazz2pop">
 						<section>
 							<h2>Jazz to Pop</h2>
@@ -650,7 +642,7 @@
 					</div>
 				</div>
 
-				<div id="classic jazz wrapper">
+				<div id="classic-jazz-wrapper">
 					<div id="classic2jazz">
 						<section>
 							<h2>Classic to Jazz</h2>
@@ -825,7 +817,7 @@
 					</div>
 				</div>
 
-				<div id="pop classic wrapper">
+				<div id="pop-classic-wrapper">
 					<div id="pop2classic">
 						<section>
 							<h2>Pop to Classic</h2>
