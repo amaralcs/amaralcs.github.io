@@ -3,31 +3,44 @@
 	// ---- ChordGAN ----
 	// Toggle genres
 	$("#chgan-genre-jazz").click(function () {
-		$("#chgan-genre-jazz").addClass("primary");
-		$("#chgan-genre-pop").removeClass("primary");
-		$("#chgan-pop").hide("slow");
-		$("#chgan-jazz").show("slow");
+		if ($(this).hasClass("primary")) {
+			$("#chgan-genre-jazz").removeClass("primary");
+			$("#chgan-jazz").hide("fast");
+		}
+		else {
+			$("#chgan-genre-jazz").addClass("primary");
+			$("#chgan-genre-pop").removeClass("primary");
+			$("#chgan-pop").hide("fast");
+			$("#chgan-jazz").show("medium");
+
+		}
 	});
 
 	$("#chgan-genre-pop").click(function () {
-		$("#chgan-genre-pop").addClass("primary");
-		$("#chgan-genre-jazz").removeClass("primary");
-		$("#chgan-jazz").hide("slow");
-		$("#chgan-pop").show("slow");
+		if ($(this).hasClass("primary")) {
+			$("#chgan-genre-pop").removeClass("primary");
+			$("#chgan-pop").hide("fast");
+		}
+		else {
+			$("#chgan-genre-pop").addClass("primary");
+			$("#chgan-genre-jazz").removeClass("primary");
+			$("#chgan-jazz").hide("fast");
+			$("#chgan-pop").show("medium");
+		}
 	});
 
 	// Toggle # of bars
 	$("#chgan-bars1").click(function () {
 		$("#chgan-bars1").addClass("primary");
 		$("#chgan-bars4").removeClass("primary");
-		$(".chgan, [id~=b4]").hide("slow");
-		$(".chgan, [id~=b1]").show("slow");
+		$(".chgan, [id~=b4]").hide("fast");
+		$(".chgan, [id~=b1]").show("medium");
 	});
 	$("#chgan-bars4").click(function () {
 		$("#chgan-bars4").addClass("primary");
 		$("#chgan-bars1").removeClass("primary");
-		$(".chgan, [id~=b1]").hide("slow");
-		$(".chgan, [id~=b4]").show("slow");
+		$(".chgan, [id~=b1]").hide("fast");
+		$(".chgan, [id~=b4]").show("medium");
 	});
 
 	// Toggle sampling rate
