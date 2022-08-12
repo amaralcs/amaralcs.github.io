@@ -57,7 +57,9 @@
 	});
 
 	// ---- CycleGAN ----
+	// Jazz2Pop
 	$("#jazz-pop").click(function () {
+		$(".cygan.listen").hide("fast");
 		$(".cygan.model").removeClass("primary");
 		$("#jazz-pop").addClass("primary");
 		$(".transfer.button").hide();
@@ -65,8 +67,22 @@
 		$("#cygan-jazz2pop").show("medium");
 		$("#cygan-pop2jazz").show("medium");
 	});
+	$("#cygan-jazz2pop").click(function () {
+		$(".transfer.button").removeClass("primary");
+		$("#cygan-jazz2pop").addClass("primary");
+		$("#pop2jazz").hide("fast");
+		$("#jazz2pop").show("medium");
+	})
+	$("#cygan-pop2jazz").click(function () {
+		$(".transfer.button").removeClass("primary");
+		$("#cygan-pop2jazz").addClass("primary");
+		$("#jazz2pop").hide("fast");
+		$("#pop2jazz").show("medium");
+	})
 
+	// Classic2Jazz
 	$("#classic-jazz").click(function () {
+		$(".cygan.listen").hide("fast");
 		$(".cygan.model").removeClass("primary");
 		$("#classic-jazz").addClass("primary");
 		$(".transfer.button").hide();
@@ -74,8 +90,22 @@
 		$("#cygan-classic2jazz").show("medium");
 		$("#cygan-jazz2classic").show("medium");
 	});
+	$("#cygan-classic2jazz").click(function () {
+		$(".transfer.button").removeClass("primary");
+		$("#cygan-classic2jazz").addClass("primary");
+		$("#jazz2classic").hide("fast");
+		$("#classic2jazz").show("medium");
+	})
+	$("#cygan-jazz2classic").click(function () {
+		$(".transfer.button").removeClass("primary");
+		$("#cygan-jazz2classic").addClass("primary");
+		$("#classic2jazz").hide("fast");
+		$("#jazz2classic").show("medium");
+	})
 
+	// Pop to Classic
 	$("#pop-classic").click(function () {
+		$(".cygan.listen").hide("fast");
 		$(".cygan.model").removeClass("primary");
 		$("#pop-classic").addClass("primary");
 		$(".transfer.button").hide();
@@ -83,5 +113,17 @@
 		$("#cygan-pop2classic").show("medium");
 		$("#cygan-classic2pop").show("medium");
 	});
+	$("#cygan-pop2classic").click(function () {
+		$(".transfer.button").removeClass("primary");
+		$("#cygan-pop2classic").addClass("primary");
+		$("#classic2pop").hide("fast");
+		$("#pop2classic").show("medium");
+	})
+	$("#cygan-classic2pop").click(function () {
+		$(".transfer.button").removeClass("primary");
+		$("#cygan-classic2pop").addClass("primary");
+		$("#pop2classic").hide("fast");
+		$("#classic2pop").show("medium");
+	})
 
 })(jQuery);
