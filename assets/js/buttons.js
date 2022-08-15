@@ -1,5 +1,19 @@
 (function ($) {
 
+	// ----- Original samples ----
+	$("[id^=btn-original").click(function () {
+		const list_id = "#" + $(this)[0].id.split("-")[2] + "-list";
+
+		if ($(this).hasClass("primary")) {
+			$(this).removeClass("primary");
+			$(list_id).hide("fast");
+		}
+		else {
+			$(this).addClass("primary");
+			$(list_id).show("medium");
+		}
+	});
+
 	// ---- ChordGAN ----
 	// Toggle genres
 	$("#chgan-genre-jazz").click(function () {

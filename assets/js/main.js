@@ -6,6 +6,9 @@
 
 (function ($) {
 
+	$("#pop-list").hide();
+	$("#jazz-list").hide();
+	$("#classic-list").hide();
 	$("#chgan-pop").hide();
 	$("#chgan-jazz").hide();
 	$("#cygan-pop").hide();
