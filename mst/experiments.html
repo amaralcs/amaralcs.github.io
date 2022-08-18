@@ -40,8 +40,75 @@
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<h1 class="major">Datasets & Experiments</h1>
+				<h1 class="major">Experiments</h1>
+				<p>
+					In order to define the experiments, we compiled a list of common processing steps to transform the
+					input data. These are listed in the table below. For reference, we also provide the steps used by
+					MIDI-VAE as it was one of the models originally considered but it didn't make the cut.
+				</p>
+				<table class="tg">
+					<thead>
+						<tr>
+							<th class="tg-fymr"></th>
+							<th class="tg-7btt">ChordGAN</th>
+							<th class="tg-7btt">CycleGAN</th>
+							<th class="tg-7btt">MIDI-VAE</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="tg-fymr">Time signatures used</td>
+							<td class="tg-9wq8">4/4</td>
+							<td class="tg-9wq8">4/4</td>
+							<td class="tg-9wq8">any</td>
+						</tr>
+						<tr>
+							<td class="tg-fymr">Time steps per bar</td>
+							<td class="tg-9wq8">16</td>
+							<td class="tg-9wq8">16</td>
+							<td class="tg-9wq8">16</td>
+						</tr>
+						<tr>
+							<td class="tg-fymr">Number of bars</td>
+							<td class="tg-9wq8">1</td>
+							<td class="tg-9wq8">4</td>
+							<td class="tg-9wq8">1</td>
+						</tr>
+						<tr>
+							<td class="tg-fymr">Lowest pitch</td>
+							<td class="tg-9wq8">24</td>
+							<td class="tg-9wq8">24</td>
+							<td class="tg-9wq8">24</td>
+						</tr>
+						<tr>
+							<td class="tg-0lax"><span style="font-weight:bold">Highest pitch</span></td>
+							<td class="tg-nrix">102</td>
+							<td class="tg-nrix">108</td>
+							<td class="tg-nrix">84</td>
+						</tr>
+						<tr>
+							<td class="tg-0lax"><span style="font-weight:bold">Pitch range</span></td>
+							<td class="tg-nrix">78</td>
+							<td class="tg-nrix">84</td>
+							<td class="tg-nrix">60</td>
+						</tr>
+						<tr>
+							<td class="tg-0lax"><span style="font-weight:bold">Velocity</span></td>
+							<td class="tg-nrix">127</td>
+							<td class="tg-nrix">127</td>
+							<td class="tg-nrix">127</td>
+						</tr>
+						<tr>
+							<td class="tg-0lax"><span style="font-weight:bold">Instrument tracks</span></td>
+							<td class="tg-nrix">all</td>
+							<td class="tg-nrix">all (merged), no drums</td>
+							<td class="tg-nrix">top 4 (separate), no drums</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>
 
+				</p>
 			</div>
 		</section>
 
