@@ -2686,6 +2686,14 @@ input[type="radio"]+label:before {
 
 /* Image */
 
+figcaption {
+	/* background-color: black;
+	color: white; */
+	font-style: italic;
+	padding: 3px;
+	text-align: center;
+}
+
 .image {
 	border-radius: 0.25em;
 	border: 0;
@@ -2722,7 +2730,7 @@ input[type="radio"]+label:before {
 
 .image.fit {
 	display: block;
-	margin: 0 0 2em 0;
+	margin: 0 0 0em 0;
 	width: 100%;
 }
 
