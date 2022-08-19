@@ -74,25 +74,33 @@
 					improvement in performance and increased batch size.
 				</p>
 				<h1 class="minor">ChordGAN</h1>
+
+
+				<img src="../images/chroma_example.png" id="chroma-example" />
 				<p>
 					In contrast, the architecture employed by ChordGAN is relatively simple with discriminator and
 					generators that use only dense layers and are shallow. The main innovation in this approach is
 					that the generator takes the chromagram representation of the song as input and is trained to
 					generate the MIDI representation.
 				</p>
-				<figure>
-					<img src="../images/chroma_example.png" class="image" />
-					<figcaption>
-						Chromagram representation of A Touch of Blues.
-					</figcaption>
-				</figure>
 				<p>
-					Again, the original codebase was not well documented and developed using TensorFlow 1. In addition
+					Again, the original codebase was not well documented and developed using TensorFlow 1. In
+					addition
 					many of the preprocessing steps happened in parallel with training, which obfuscated the model
 					implementation.
 					We made improvements to the documentation, delineated data preparation and model training and
 					provide scripts for automating training and evaluation.
 				</p>
+				<div style="clear: right">
+					<figcaption id="right-caption">
+						Chromagram representation of A Touch of Blues
+					</figcaption>
+				</div>
+				</br>
+				</br>
+
+
+
 
 			</div>
 		</section>
@@ -100,7 +108,7 @@
 	</div>
 
 	<!-- Footer -->
-	<footer id="footer" class="wrapper alt">
+	<footer id=" footer" class="wrapper alt">
 		<div class="inner">
 			<ul class="menu">
 				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

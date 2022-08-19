@@ -2693,6 +2693,22 @@ input[type="radio"]+label:before {
 
 /* Image */
 
+#chroma-example {
+	float: right;
+	width: 60%;
+	border-radius: 0.5em;
+	padding: 5px;
+
+
+}
+
+#right-caption {
+	float: right;
+	font-style: italic;
+	padding: 3px;
+	text-align: center;
+}
+
 figcaption {
 	/* background-color: black;
 	color: white; */
