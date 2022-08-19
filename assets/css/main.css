@@ -2698,8 +2698,6 @@ input[type="radio"]+label:before {
 	width: 60%;
 	border-radius: 0.5em;
 	padding: 5px;
-
-
 }
 
 #right-caption {
@@ -2707,6 +2705,33 @@ input[type="radio"]+label:before {
 	font-style: italic;
 	padding: 3px;
 	text-align: center;
+}
+
+#lab {
+	max-width: 30%;
+	border-radius: 0.25em;
+	display: block;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+#kandinsky {
+	max-width: 37.5%;
+	border-radius: 0.25em;
+	display: block;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+#stylized {
+	max-width: 30%;
+	border-radius: 0.25em;
+	display: block;
+	border: 0;
+	display: inline-block;
+	position: relative;
 }
 
 figcaption {
