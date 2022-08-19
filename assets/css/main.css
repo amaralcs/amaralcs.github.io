@@ -166,6 +166,13 @@ textarea {
 	height: 400px;
 }
 
+#frame-wise-cosine {
+	/* background-color: #ffffff; */
+	background-color: solid;
+	width: 100%;
+	height: 40%;
+}
+
 /* Basic */
 
 @-ms-viewport {
@@ -2708,7 +2715,7 @@ figcaption {
 
 .image.left,
 .image.right {
-	max-width: 40%;
+	max-width: 60%;
 }
 
 .image.left img,

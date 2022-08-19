@@ -37,8 +37,54 @@
 		<!-- Main -->
 		<section id="main" class="wrapper">
 			<div class="inner">
-				<h1 class="major">Evaluation</h1>
-
+				<h1 class="major">Evaluation Metrics</h1>
+				<p>
+					Building on top of <a href="https://zenodo.org/record/3527878">Cifka et al. (2020)</a> and <a
+						href="https://aimc2021.iem.at/wp-content/uploads/2021/06/AIMC_2021_Lu_Dubnov.pdf">
+						CycleGAN (Lu and Dubnov, 2021)</a>, four metrics were used to objectively evaluate the
+					results of style transfer for the models trained.
+					They can be separated into two categories: <b>content preservation</b> and <b>style fit</b>.
+				</p>
+				<h2 class="major">Content Preservation</h2>
+				<p>
+					Content preservation metrics provide a measure of content similarity between the original song and
+					its style transfer counterpart. Two metrics are used for measuring preservation, the
+					<i>Tonnetz distance</i> and the <i>frame-wise mean cosine similarity</i>.
+				</p>
+				<h3>Tonnetz Distance</h3>
+				<p>
+					Calculated as the L2 norm of the difference between the Tonnetz projection of a song and the
+					Tonnetz projection of the transferred song. The Tonnetz projection of a song is obtained by
+					computing the dot product between the song chromagram and the base Tonnetz graph.
+				</p>
+				<p>
+					The Tonnetz graph is obtained by computing a set of coordinates for each tonal category (A to G#),
+					across three different intervals (fifth, minor third and major third). The coordinates are given by
+					the equation ($A$ and $w$ are defined for each interval):
+					$$ C(x) \ =\ (\ A\times\sin(x\ \times\ w) ,\ A\times \cos(x\ \times\ w) \ ) $$
+				</p>
+				<h3>Frame-wise mean cosine similarity</h3>
+				<img src="../images/chroma_sim.png" class="image left">
+				</br>
+				<p>
+					Given by the mean cosine similarity between averaged windows of the chromagram representation of
+					the original song and the transferred song.
+				</p>
+				</br>
+				</br>
+				<p>
+					Following the steps <a href="https://zenodo.org/record/3527878">Cifka et al. (2020)</a>, the
+					chromagram of each song is computed at a rate of 12 frames per beat, then averaged over a
+					sliding window of 24 frames (i.e. 2 beats) and a stride of 12 frames (1 beat).
+					Next, the cosine similarity between the averaged windows of two songs are computed, and
+					the overall mean is taken.
+				</p>
+				</br>
+				</br>
+				<h2 class="major">Style Fit</h2>
+				<p>
+					Style fit is
+				</p>
 
 			</div>
 		</section>
