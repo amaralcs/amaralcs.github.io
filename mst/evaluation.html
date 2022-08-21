@@ -134,13 +134,63 @@
 						(Mckay and Fujinaga 2005).</a> For each model, we aggregated the results of the experiments and
 					report distribution of scores in the images below.
 				</p>
-				<h3>Tonnetz Distance</h3>
-				<img src="../images/results/chordgan_tonnetz_all.png" class="image left">
-				<img src="../images/results/cyclegan_tonnetz_all.png" class="image right">
-				<img src="../images/results/chordgan_nano_all.png" class="image">
-				<img src="../images/results/cyclegan_nano_all.png" class="image">
-				<img src="../images/results/chordgan_macro.png" class="image">
-				<img src="../images/results/cyclegan_macro_all.png" class="image">
+				<!-- Slideshow container -->
+				<div class="slideshow-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 6</div>
+						<img src="../images/results/chordgan_tonnetz_all.png" style="width:100%">
+
+						<div class="text">Tonnetz distance for ChordGAN. As the sampling rate increases, the Tonnetz
+							distance decreases. Number of bars has little impact.</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 6</div>
+						<img src="../images/results/cyclegan_tonnetz_all.png" style="width:100%">
+
+						<div class="text">In contrast, as the number of bars used for CycleGAN increases, the distance
+							increases.</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 6</div>
+						<img src="../images/results/chordgan_nano_all.png" style="width:100%">
+
+						<div class="text">ChordGAN nano-metrics broken down per metric/sampling rate/number of bars
+						</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 6</div>
+						<img src="../images/results/cyclegan_nano_all.png" style="width:100%">
+
+						<div class="text">CycleGAN nano-metrics. Results were quite poor.</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 6</div>
+						<img src="../images/results/chordgan_macro.png" style="width:100%">
+
+						<div class="text">ChordGAN macro metrics. Number of bars has little to no impact. Increasing
+							sampling rate improves performance.</div>
+					</div>
+					<div class="mySlides fade">
+						<div class="numbertext">6 / 6</div>
+						<img src="../images/results/cyclegan_macro_all.png" style="width:100%">
+
+						<div class="text">While increasing the number of bars for CycleGAN improves results, performance
+							is quite poor when compared to ChordGAN.</div>
+					</div>
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+				</div>
 
 			</div>
 
@@ -165,6 +215,7 @@
 	<script src="../assets/js/breakpoints.min.js"></script>
 	<script src="../assets/js/util.js"></script>
 	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/carousel.js"></script>
 	<script type="text/javascript" src="http://math.etsu.edu/LaTeXMathML/LaTeXMathML.js"></script>
 
 
