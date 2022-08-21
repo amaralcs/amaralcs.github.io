@@ -47,14 +47,14 @@
 	$("#chgan-bars1").click(function () {
 		$("#chgan-bars1").addClass("primary");
 		$("#chgan-bars4").removeClass("primary");
-		$(".chgan, [id~=b4]").hide("fast");
-		$(".chgan, [id~=b1]").show("medium");
+		$(".chgan[id*=b4]").hide("fast");
+		$(".chgan[id*=b1]").show("medium");
 	});
 	$("#chgan-bars4").click(function () {
 		$("#chgan-bars4").addClass("primary");
 		$("#chgan-bars1").removeClass("primary");
-		$(".chgan, [id~=b1]").hide("fast");
-		$(".chgan, [id~=b4]").show("medium");
+		$(".chgan[id*=b1]").hide("fast");
+		$(".chgan[id*=b4]").show("medium");
 	});
 
 	// Toggle sampling rate
@@ -62,25 +62,25 @@
 		$("#chgan-sr8").addClass("primary");
 		$("#chgan-sr16").removeClass("primary");
 		$("#chgan-sr32").removeClass("primary");
-		$(".chgan, [id~=fs16]").hide("slow");
-		$(".chgan, [id~=fs32]").hide("slow");
-		$(".chgan, [id~=fs8]").show("slow");
+		$(".chgan[id*=fs16]").hide("fast");
+		$(".chgan[id*=fs32]").hide("fast");
+		$(".chgan[id*=fs8]").show("medium");
 	});
 	$("#chgan-sr16").click(function () {
 		$("#chgan-sr16").addClass("primary");
 		$("#chgan-sr8").removeClass("primary");
 		$("#chgan-sr32").removeClass("primary");
-		$(".chgan, [id~=fs8]").hide("slow");
-		$(".chgan, [id~=fs32]").hide("slow");
-		$(".chgan, [id~=fs16]").show("slow");
+		$(".chgan[id*=fs8]").hide("fast");
+		$(".chgan[id*=fs32]").hide("fast");
+		$(".chgan[id*=fs16]").show("medium");
 	});
 	$("#chgan-sr32").click(function () {
 		$("#chgan-sr32").addClass("primary");
 		$("#chgan-sr16").removeClass("primary");
 		$("#chgan-sr8").removeClass("primary");
-		$(".chgan, [id~=fs16]").hide("slow");
-		$(".chgan, [id~=fs8]").hide("slow");
-		$(".chgan, [id~=fs32]").show("slow");
+		$(".chgan, [id~=fs16]").hide("fast");
+		$(".chgan, [id~=fs8]").hide("fast");
+		$(".chgan, [id~=fs32]").show("medium");
 	});
 
 	// ---- CycleGAN ----

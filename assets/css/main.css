@@ -2742,6 +2742,10 @@ figcaption {
 	text-align: center;
 }
 
+.songtitle {
+	text-align: left;
+}
+
 .image {
 	border-radius: 0.25em;
 	border: 0;
